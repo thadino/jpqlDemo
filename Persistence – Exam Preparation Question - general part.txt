@@ -1,0 +1,50 @@
+
+1)
+Describe how we have handled persistence in the last three semesters. The considerations should include all
+relevant layers. File IO, Relational Databases, the browsers local storage and cookies.
+
+We have persisted data in the following ways the other semesters:
+
+File IO (save to a document and read from it later).
+
+Relational Database (insert the data to read it later using create & read from the CROD).
+
+Cookies (Creating a cookie on the user's computer with some data so it doesnt have to redo the data creating process everytime).
+
+
+2)
+Discuss how we usually have queried a relational database
+
+we used SQL (Structured Query Language) with the follow statements:
+- Create
+- Read
+- Opdate
+- Delete
+Also known as CROD.
+
+3)
+Explain the Pros & Cons in using an Object Relational Mapping Framework
+
+Pros;
+- Reduces amount of code needed to write.
+- avoids low level SQL and JDBC code.
+- Database and Schema is not dependant on the database (easy to change to another database).
+- It allows us to use the OO-paradigm (Object Oriented Paradigm)
+
+cons;
+- It can get really confusing as to what is actucally happening in your implementation code.
+- Heavy reliance on ORM software has been stated as a major factor in making bad database designs.
+- Theres a lot of problems trying to match a object to the database.
+
+4)
+Elaborate on some of the problems a ORM tries to solve.
+- Take advantage of the good parts in a relational database without leaving all the things OO language does good.
+- Make it seem like we only do OO when we actucally manipulate data.
+- Less work to do.
+ 
+
+
+5)
+Discuss the methods we can use to query a JPA design and compare with what you explained above
+
+TypedQuery (JPA 2) could be used to implement a JPA design it also extends the Query interface (the old JPA 1).
